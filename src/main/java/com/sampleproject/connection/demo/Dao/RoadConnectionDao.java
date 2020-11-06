@@ -19,6 +19,8 @@ public class RoadConnectionDao {
     private static List<Travel> travles = new ArrayList();
     private static List<String> arrayList = new ArrayList<>();
     static Logger LOGGER = LoggerFactory.getLogger("RoadConnectionDao");
+    public static final String CITY = "city.txt";
+    public static final String DELIMITER = "\r\n";
 
    //Before I used static arraylist object
 
@@ -36,9 +38,9 @@ public class RoadConnectionDao {
     *   from Arraylist create a travel model*/
     static {
         try {
-            Resource resource = new ClassPathResource("city.txt");
+            Resource resource = new ClassPathResource(CITY);
             Scanner scan = new Scanner(resource.getInputStream());
-            scan = scan.useDelimiter("\r\n");
+            scan = scan.useDelimiter(DELIMITER);
             String str;
 
             while (scan.hasNext()) {

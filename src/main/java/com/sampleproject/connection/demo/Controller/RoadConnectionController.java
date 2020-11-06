@@ -23,13 +23,9 @@ public class RoadConnectionController {
 
 
         model.addAttribute("start");
-        //Logger logger = LoggerFactory.getLogger(LoggingController.class);
 
         return roadConnectionService.validatePath(origin, destination);
 
-
-        //model.put("returnVlaue", returnValue);
-        //return returnValue;
     }
 
     @RequestMapping(value = "/add",
