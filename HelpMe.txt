@@ -1,2 +1,0 @@
-************Connection Service******************
-This simple application, where two railroads are connected having origin and destination.which accept two parameters, Origin and destination in the URL.Each time, when we run the URL, the selected Origin and destination is with in the city.txt file. It will display  “YES” else “No”. I have written the Junit test Condition for pass and fail scenarios.  
